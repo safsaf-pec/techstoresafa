@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>TECHstore | Backoffice Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="C:\Users\hsafa\OneDrive\Bureau\code js 3iir\index.css">
+   
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <h2>TECHstore</h2>
+    <ul>
+        <li><a href="#" class="active" data-section="dashboard">
+            <i class="fas fa-chart-line"></i> Dashboard
+        </a></li>
+        <li><a href="#" data-section="products">
+            <i class="fas fa-box"></i> Produits
+        </a></li>
+        <li><a href="#" data-section="categories">
+            <i class="fas fa-tags"></i> Catégories
+        </a></li>
+        <li><a href="#" data-section="api">
+            <i class="fas fa-database"></i> API
+        </a></li>
+    </ul>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1>Backoffice Dashboard</h1>
+    </header>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="section active">
+        <h2>Dashboard</h2>
+
+        <div class="kpis">
+            <div class="kpi">
+                <i class="fas fa-box"></i>
+                <p class="kpi-value">120</p>
+                <span>Produits</span>
+            </div>
+            <div class="kpi">
+                <i class="fas fa-tags"></i>
+                <p class="kpi-value">6</p>
+                <span>Catégories</span>
+            </div>
+            <div class="kpi">
+                <i class="fas fa-dollar-sign"></i>
+                <p class="kpi-value">45 000 DH</p>
+                <span>Stock</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUITS -->
+    <section id="products" class="section">
+        <h2>Produits</h2>
+
+        <button id="openProductForm">➕ Ajouter un produit</button>
+
+        <div id="productForm" class="card hidden">
+            <input type="text" placeholder="Nom du produit">
+            <input type="number" placeholder="Prix">
+            <input type="number" placeholder="Stock">
+            <button>Enregistrer</button>
+        </div>
+
+        <div class="cards">
+            <div class="card">Laptop HP</div>
+            <div class="card">iPhone 13</div>
+            <div class="card">Clavier Gaming</div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section">
+        <h2>Catégories</h2>
+
+        <input type="text" placeholder="Nouvelle catégorie">
+        <button>Ajouter</button>
+
+        <ul class="list">
+            <li>Ordinateurs</li>
+            <li>Smartphones</li>
+            <li>Accessoires</li>
+        </ul>
+    </section>
+
+    <!-- API -->
+    <section id="api" class="section">
+        <h2>API & Statistiques</h2>
+
+        <p>Cette section affichera plus tard les données de l'API .</p>
+        <button>Charger les données</button>
+    </section>
+
+</main>
+
+<script src="C:\Users\hsafa\OneDrive\Bureau\code js 3iir\index.js"></script>
+</body>
+</html>
